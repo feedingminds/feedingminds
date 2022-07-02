@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feeding Minds</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top pb-5 mb-5 d-block"
+    data-navbar-on-scroll="data-navbar-on-scroll" style=" background-color: rgba(249, 250, 253, 0);">
+    <div class="container gap-3 ms-auto justify-content-end pe-5 d-none d-lg-flex">
+      <a href="https://www.linkedin.com/company/feedingmindsperu/" target="_blank">
+        <img src="./assets/img/linkedin.svg" alt="linkedin">
+      </a>
+      <a href="https://www.instagram.com/feeding.minds.peru/" target="_blank">
+        <img src="./assets/img/instagram.svg" alt="instagram">
+      </a>
+      <a href="https://www.facebook.com/feeding.mids" target="_blank">
+        <img src="./assets/img/facebook.svg" alt="facebook">
+      </a>
+    </div>
+    <div class="container d-flex"><a class="navbar-brand order-last order-md-first" id="logo" href="index.html"><img
+          src="assets/img/logo.svg" height="100" alt="logo" class="w-75"></a>
+      <button class="navbar-toggler" type="button" id="expand" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation"><span class="navbar-toggler-icon order-0 order-first order-md-last">
+        </span></button>
+      <div class="collapse bg-white navbar-collapse border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+        <ul
+          class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start fw-bold text-black">
+          <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#service">Inicio</a>
+          </li>
+          <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
+              href="#destination">Únete</a></li>
+          <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
+              href="#booking">Servicios</a></li>
+          <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
+              href="#testimonial">Nosotros</a></li>
+          <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
+              href="#testimonial">Eventos</a></li>
+          <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
+              href="#testimonial">Dona</a></li>
+          <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
+              href="#testimonial">Contactanos</a></li>
+        </ul>
+        <div class="container gap-3 ms-auto justify-content-start pe-5 d-flex d-lg-none">
+          <a href="https://www.linkedin.com/company/feedingmindsperu/" target="_blank">
+            <img src="./assets/img/linkedin.svg" alt="linkedin">
+          </a>
+          <a href="https://www.instagram.com/feeding.minds.peru/" target="_blank">
+            <img src="./assets/img/instagram.svg" alt="instagram">
+          </a>
+          <a href="https://www.facebook.com/feeding.mids" target="_blank">
+            <img src="./assets/img/facebook.svg" alt="facebook">
+          </a>
+        </div>
+        <a class="navbar-brand order-last order-md-first d-lg-none" href="index.html"><img src="assets/img/logo.svg"
+            height="100" alt="logo" class="w-75 text-start"></a>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="header-bg" style="margin-top: 9rem; ">
+    <div class="bg-holder header-bg">
+    </div>
+    <!--/.bg-holder-->
+
+    <div class="container ">
+      <div class="row align-items-center">
+        <div class="col-md-5 col-lg-6 order-0 order-md-1 text-end d-none d-lg-block"><img
+            class="pt-5 mt-5 pt-md-0 img-fluid" src="./assets/img/hero-img.png" alt="hero-header"></div>
+        <div class="col-md-7 col-lg-6 text-md-start text-center py-6">
+          <div class=" d-flex flex-column pt-5 pb-4 pb-lg-0 pt-lg-0">
+            <h1 class="hero-title fs-1">¿Listo para iniciar tu camino <br class="d-none d-lg-inline"> a
+              la <span class=" text-secondary">
+                universidad</span>?
+              <img src="./assets/img/highlight.svg" alt="highlight" class=" img-fluid w-50 ps-5">
+            </h1>
+          </div>
+
+          <p class="mb-4 fw-medium fs-5 text-start pb-4 pb-lg-0">Te conectamos con la educación superior mediante <br
+              class="d-none d-xl-block">acompañamiento psicológico, tecnicas de estudio y mentorías, <br
+              class="d-none d-xl-block">mejorando tu calidad de vida en el futuro.</p>
+          <div class="text-start text-md-start"> <a
+              class="btn btn-primary btn-lg w-50 me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow" href="#!"
+              role="button">Únete</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script>
+    const logo = document.querySelector('#logo')
+    const navBtn = document.querySelector('#expand')
+    navBtn.addEventListener('click', () => {
+      if (navBtn.ariaExpanded === 'true') {
+        logo.classList.add('d-none')
+      } else {
+        logo.classList.remove('d-none')
+      }
+    })
+
+
+
+  </script>
+</body>
+
+
+</html>

@@ -1,0 +1,45 @@
+$primary: #3148a1;
+$secondary: #fd823d;
+
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4{
+  font-family: 'Montserrat',sans-serif;
+}
+
+
+.header-bg{
+  background-image: url('./assets/img/hero-bg.svg');
+  background-repeat: no-repeat;
+  background-position: bottom bottom;
+  background-size: cover;
+}
+
+.highlighted{
+  background-image: url('./assets/img/highlight.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #000 !important;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: $primary !important;
+  border-bottom: 1px solid $primary;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+  .header-bg{
+    background-position: bottom center;
+    background-size: cover;
+  }
+}
+
+
+
+@import './node_modules/bootstrap/scss/bootstrap.scss'
