@@ -1,5 +1,5 @@
 @charset "UTF-8";
-body {
+body, p {
   font-family: "Roboto", sans-serif;
 }
 
@@ -28,6 +28,18 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 .navbar-light .navbar-nav .nav-link:hover {
   color: #3148a1 !important;
   border-bottom: 1px solid #3148a1;
+}
+
+.w-5 {
+  width: 5rem;
+}
+
+.text-gray {
+  color: #656568;
+}
+
+.end-25 {
+  right: 20%;
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {

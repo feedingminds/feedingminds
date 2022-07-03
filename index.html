@@ -45,7 +45,7 @@
           <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
               href="#booking">Servicios</a></li>
           <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
-              href="#testimonial">Nosotros</a></li>
+              href="#nosotros">Nosotros</a></li>
           <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
               href="#testimonial">Eventos</a></li>
           <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
@@ -94,23 +94,95 @@
               class="d-none d-xl-block">mejorando tu calidad de vida en el futuro.</p>
           <div class="text-start text-md-start"> <a
               class="btn btn-primary btn-lg w-50 me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow" href="#!"
-              role="button">Únete</a>
+              role="button">Unete</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <main class="container mt-5 pt-2">
+    <section id="nosotros" class="mt-5">
+      <div class="d-flex align-items-center justify-content-center">
+        <img src="./assets/img/stain.svg" alt="stain" class=" position-absolute img-fluid end-50" style="z-index: -1;">
+        <h2 class="d-lg-none">Nosotros</h2>
+        <h2 class="d-none d-lg-block">Acerca de Nosotros</h2>
+      </div>
+      <div class="w-5 border border-3 border-bottom border-secondary mx-auto rounded"></div>
+      <section>
+        <div class="container p-0">
+          <div class="row g-0 mt-5 mt-lg-0">
+            <div class="col-lg-7 order-lg-2 pe-0 pe-sm-4 pe-md-0 pe-lg-0">
+              <img src="./assets/img/mision.png" alt="chica con libros" class="img-fluid d-none d-lg-block">
+              <img src="./assets/img/mision.png" alt="chica con libros" class="img-fluid pe-5 d-lg-none">
+            </div>
+            <div class="col-lg-5 order-lg-1 my-auto">
+              <h3>¿Quiénes somos?</h3>
+              <div class="w-5 border border-3 border-bottom border-secondary mt-3 mb-5 rounded"></div>
+              <p class="text-gray fs-5 mb-0 img-p">Feeding Minds es una organización social que busca fortalecer la
+                preparación
+                académica preuniversitaria en estudiantes de bajos recursos económicos por medio de la mentoría
+                académica y el acompañamiento psicológico a través del apoyo de voluntarios universitarios y
+                profesionales.</p>
+            </div>
+          </div>
+          <hr>
+          <div class="row g-0">
+            <div class="col-lg-7 text-white pe-0 pe-sm-4 pe-md-0 pe-lg-0">
+              <img src="./assets/img/mision.png" alt="chica con libros"
+                class="img-fluid position-relative end-25 d-none d-lg-block">
+              <img src="./assets/img/mision.png" alt="chica con libros" class="img-fluid pe-5 d-lg-none">
+            </div>
+            <div class="col-lg-5 my-auto pe-lg-5">
+              <h3>Nuestra <span class=" text-secondary">misión</span></h3>
+              <div class="w-5 border border-3 border-bottom border-secondary mt-3 mb-5 rounded"></div>
+              <p class="text-gray fs-5 mb-0 img-p">Fortalecer la preparación académica preuniversitaria en estudiantes
+                de
+                bajos recursos económicos por medio de la mentoría académica y el acompañamiento psicológico a través
+                del apoyo de mentores. </p>
+            </div>
+          </div>
+          <hr>
+          <div class="row g-0">
+            <div class="col-lg-7 order-lg-2 text-white">
+              <img src="./assets/img/vision.png" alt="chica estudiando" class=" img-fluid">
+            </div>
+            <div class="col-lg-5 order-lg-1 my-auto">
+              <h3>Nuestra <span class=" text-secondary">visión</span></h3>
+              <div class="w-5 border border-3 border-bottom border-secondary mt-3 mb-5 rounded"></div>
+              <p class="text-gray fs-5 mb-0 img-p">Queremos ser una organización referente y pionera en la preparación
+                académica pre-universitaria con enfoque holístico, impactando en nuestros clientes y disminuyendo la
+                brecha educativa en Latinoamérica.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+  </main>
+
   <script src="./js/bootstrap.min.js"></script>
 
   <script>
     const logo = document.querySelector('#logo')
     const navBtn = document.querySelector('#expand')
+    const p = document.querySelectorAll('.img-p')
     navBtn.addEventListener('click', () => {
       if (navBtn.ariaExpanded === 'true') {
         logo.classList.add('d-none')
       } else {
         logo.classList.remove('d-none')
+      }
+    })
+    if (window.innerWidth > 320 && window.innerWidth < 768) {
+      p.forEach(p => p.classList.replace('fs-5', 'fs-6'))
+    }
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 320 && window.innerWidth < 768) {
+        p.forEach(p => p.classList.replace('fs-5', 'fs-6'))
+      } else {
+        p.forEach(p => p.classList.replace('fs-6', 'fs-5'))
       }
     })
 
