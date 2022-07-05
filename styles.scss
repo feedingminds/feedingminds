@@ -36,6 +36,9 @@ h1,h2,h3,h4{
 .w-5{
   width: 5rem;
 }
+.w-10{
+  width: 10rem;
+}
 
 .text-gray{
   color: #656568;
@@ -45,10 +48,80 @@ h1,h2,h3,h4{
   right: 20%;
 }
 
+.end-55{
+  right: 55%;
+}
+
+.translate-y{
+  transform: translateY(20%);
+}
+
+.translate-y-negative{
+  transform: translateY(-20%);
+}
+
+.collapse .show {
+  
+  display: none;
+
+}
+
+.collapsing {
+height: 0;
+overflow: hidden;
+}
+
+.card {
+border-radius: 15px;
+box-shadow: 5px 5px 10px rgb(0 0 0 / 20%);
+}
+
+.fraseMotivacional {
+display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.carousel .item img {
+width: 100%;
+height: 100%;
+}
+
+.eventosNoticias {
+margin-top: 80px;
+margin-bottom: 80px;
+}
+
+
+.cardDonaciones {
+position: absolute;
+  left: 50% !important;
+  width: 50%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.logoYape {
+width: 30%;
+height: 60%;
+}
+
+.logoQR {
+width: 30%;
+height: 60%;
+}
+
 @media screen and (min-width: 320px) and (max-width: 768px){
   .header-bg{
     background-position: bottom center;
     background-size: cover;
+  }
+
+  .cardDonaciones{
+    width: 90%;
   }
 }
 
