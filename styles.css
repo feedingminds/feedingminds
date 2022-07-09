@@ -3,7 +3,7 @@ body, p {
   font-family: "Roboto", sans-serif;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+h1, .h1, h2, .h2, h3, .h3 {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -54,8 +54,16 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   transform: translateY(20%);
 }
 
+.translate-y-sm {
+  transform: translateY(10%);
+}
+
 .translate-y-negative {
   transform: translateY(-20%);
+}
+
+.bg-blue {
+  background-color: #DAE3FB;
 }
 
 .collapse .show {
@@ -107,6 +115,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 .logoQR {
   width: 30%;
   height: 60%;
+}
+
+footer ul li a {
+  font-family: "Roboto", sans-serif;
+  color: #3148a1;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {

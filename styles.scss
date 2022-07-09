@@ -6,7 +6,7 @@ body,p{
   font-family: 'Roboto', sans-serif;
 }
 
-h1,h2,h3,h4{
+h1,h2,h3{
   font-family: 'Montserrat',sans-serif;
 }
 
@@ -56,9 +56,18 @@ h1,h2,h3,h4{
   transform: translateY(20%);
 }
 
+.translate-y-sm{
+  transform: translateY(10%);
+}
+
 .translate-y-negative{
   transform: translateY(-20%);
 }
+
+.bg-blue{
+  background-color: #DAE3FB;
+}
+
 
 .collapse .show {
   
@@ -77,7 +86,7 @@ box-shadow: 5px 5px 10px rgb(0 0 0 / 20%);
 }
 
 .fraseMotivacional {
-display: flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
@@ -112,6 +121,12 @@ height: 60%;
 .logoQR {
 width: 30%;
 height: 60%;
+}
+
+footer ul li a{
+  font-family: 'Roboto', sans-serif;
+  color: $primary;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px){
