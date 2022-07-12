@@ -14,7 +14,7 @@ h1,h2,h3{
 .header-bg{
   background-image: url('./assets/img/hero-bg.svg');
   background-repeat: no-repeat;
-  background-position: bottom bottom;
+  background-position: top right;
   background-size: cover;
 }
 
@@ -75,6 +75,10 @@ h1,h2,h3{
 
 }
 
+.pt-10{
+  padding-top: 10rem;
+}
+
 .collapsing {
 height: 0;
 overflow: hidden;
@@ -127,6 +131,14 @@ footer ul li a{
   font-family: 'Roboto', sans-serif;
   color: $primary;
   text-decoration: none;
+}
+
+
+.fondoDonaciones{
+  background-image: url('./assets/img/donaciones-1.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px){
