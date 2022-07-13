@@ -101,7 +101,7 @@ margin-bottom: 80px;
 .cardDonaciones {
 position: absolute;
   left: 50% !important;
-  width: 50%;
+  width: 65%;
   height: 30%;
   display: flex;
   justify-content: center;
@@ -132,12 +132,24 @@ a:link, a:visited, a:active {
   text-decoration:none;
 }
 
+.img-arrow{
+
+  width: 18%;
+  position: absolute;
+  left: 25%;
+
+}
+
 
 .fondoDonaciones{
   background-image: url('./assets/img/donaciones-1.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.h-105{
+  height: 120%;
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px){
@@ -164,7 +176,35 @@ a:link, a:visited, a:active {
   .translate-y-negative{
     transform: translateY(-20%);
   }
+
+  .font-title{
+    font-size: 3.5rem;
+  }
+
+  .img-arrow{
+    position: relative;
+    bottom: 5rem;
+    left: 1rem;
+  }
 }
+
+@media screen and (max-width: 2000px) {
+  .imgHead {
+    width: 100%;
+    position: relative;
+    top: 1.5rem;
+  }
+}
+
+
+@media screen and (min-width: 990px) and (max-width: 1200px){
+  .imgHead {
+    width: 85%;
+    position: relative;
+    top: 1.1rem;
+  }
+}
+
 
 
 @import './node_modules/bootstrap/scss/bootstrap.scss'
