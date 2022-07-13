@@ -52,17 +52,7 @@ h1,h2,h3{
   right: 55%;
 }
 
-.translate-y{
-  transform: translateY(20%);
-}
 
-.translate-y-sm{
-  transform: translateY(10%);
-}
-
-.translate-y-negative{
-  transform: translateY(-20%);
-}
 
 .bg-blue{
   background-color: #DAE3FB;
@@ -133,6 +123,15 @@ footer ul li a{
   text-decoration: none;
 }
 
+[aria-expanded="true"] i {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+a:link, a:visited, a:active {
+  text-decoration:none;
+}
+
 
 .fondoDonaciones{
   background-image: url('./assets/img/donaciones-1.png');
@@ -152,6 +151,20 @@ footer ul li a{
   }
 }
 
+
+@media screen and (min-width: 992px){
+  .translate-y{
+    transform: translateY(20%);
+  }
+  
+  .translate-y-sm{
+    transform: translateY(10%);
+  }
+  
+  .translate-y-negative{
+    transform: translateY(-20%);
+  }
+}
 
 
 @import './node_modules/bootstrap/scss/bootstrap.scss'

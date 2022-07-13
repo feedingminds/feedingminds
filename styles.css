@@ -50,18 +50,6 @@ h1, .h1, h2, .h2, h3, .h3 {
   right: 55%;
 }
 
-.translate-y {
-  transform: translateY(20%);
-}
-
-.translate-y-sm {
-  transform: translateY(10%);
-}
-
-.translate-y-negative {
-  transform: translateY(-20%);
-}
-
 .bg-blue {
   background-color: #DAE3FB;
 }
@@ -127,6 +115,14 @@ footer ul li a {
   text-decoration: none;
 }
 
+[aria-expanded=true] i {
+  transform: rotate(180deg);
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+}
+
 .fondoDonaciones {
   background-image: url("./assets/img/donaciones-1.png");
   background-position: center center;
@@ -141,6 +137,17 @@ footer ul li a {
   }
   .cardDonaciones {
     width: 90%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .translate-y {
+    transform: translateY(20%);
+  }
+  .translate-y-sm {
+    transform: translateY(10%);
+  }
+  .translate-y-negative {
+    transform: translateY(-20%);
   }
 }
 /*!
