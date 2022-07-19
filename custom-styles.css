@@ -1,0 +1,25 @@
+
+
+.card-donation > img:first-child {
+    transform: scale(1.3);
+}
+
+@media screen and (max-width: 660px) {
+    .cardDonaciones {
+        width: 200px ;
+        height: 500px ;
+    }   
+    .card-donation {
+        flex-direction: column;
+
+
+    }
+    .card-donation > * {
+        width: 100%;
+        text-align: justify;
+    }
+
+    #contacto {
+        margin-top: 8rem !important;
+    }
+}
