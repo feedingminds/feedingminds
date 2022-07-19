@@ -23,6 +23,7 @@
         margin-top: 8rem !important;
     }
     .fondoDonaciones > div:first-child {
-        padding-top: 5rem !important;
+        padding-top: 0 !important;
+        margin-top: 0 !important;
     }
 }
