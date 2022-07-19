@@ -22,4 +22,7 @@
     #contacto {
         margin-top: 8rem !important;
     }
+    .fondoDonaciones > div:first-child {
+        padding-top: 5rem !important;
+    }
 }
